@@ -20,7 +20,7 @@ const ResultComponent = ({ prediction }) => {
           </div>
         ) : (
           <div className="card card-body alert alert-success">
-            <center>This X-Ray does not have Pneumonia.</center>
+            <center> </center>
           </div>
         )}
         <div className="row">

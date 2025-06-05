@@ -20,13 +20,13 @@ export const services = [
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
   },
-  {
-    id: "4",
-    name: "Liver Disease Test",
-    desc: "Liver disease symptoms vary and may include abdominal swelling, easy bruising, stool and urine color changes, and jaundice. Some cases are asymptomatic. Diagnostic tests like imaging and liver function tests are essential for detection and diagnosis.",
-    bgColor: "rgba(1, 181, 197, .2)",
-    textColor: "#01B5C5",
-  },
+  // {
+  //   id: "4",
+  //   name: "Liver Disease Test",
+  //   desc: "Liver disease symptoms vary and may include abdominal swelling, easy bruising, stool and urine color changes, and jaundice. Some cases are asymptomatic. Diagnostic tests like imaging and liver function tests are essential for detection and diagnosis.",
+  //   bgColor: "rgba(1, 181, 197, .2)",
+  //   textColor: "#01B5C5",
+  // },
   // {
   //   id: "5",
   //   name: "Breast Cancer Test",
@@ -41,11 +41,11 @@ export const services = [
   //   bgColor: "rgba(151, 113, 255, .2)",
   //   textColor: "#9771FF",
   // },
-  {
-    id: "2",
-    name: "Pneumonia Test",
-    desc: "Pneumonia inflames air sacs in the lungs, leading to fluid or pus accumulation, coughing with phlegm or pus, fever, chills, and breathing difficulties. Bacteria, viruses, and fungi are common culprits.",
-    bgColor: "rgba(151, 113, 255, .2)",
-    textColor: "#9771FF",
-  },
+  // {
+  //   id: "2",
+  //   name: "Pneumonia Test",
+  //   desc: "Pneumonia inflames air sacs in the lungs, leading to fluid or pus accumulation, coughing with phlegm or pus, fever, chills, and breathing difficulties. Bacteria, viruses, and fungi are common culprits.",
+  //   bgColor: "rgba(151, 113, 255, .2)",
+  //   textColor: "#9771FF",
+  // },
 ];

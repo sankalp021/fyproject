@@ -41,9 +41,9 @@ const DiseaseInput = ({ disease, onSubmit }) => {
             htmlFor="symptoms" 
             className="block text-sm font-medium text-headingColor mb-2"
           >
-            Describe your symptoms or concerns about {disease}:
+            
           </label>
-          <textarea
+          {/* <textarea
             id="symptoms"
             name="symptoms"
             rows={4}
@@ -52,16 +52,16 @@ const DiseaseInput = ({ disease, onSubmit }) => {
             className="w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor rounded-md"
             placeholder="e.g., I've been experiencing..."
             required
-          />
+          /> */}
         </div>
         
-        <button
+        {/* <button
           type="submit"
           disabled={loading}
           className="w-full bg-primaryColor text-white text-[16px] leading-[30px] rounded-lg px-4 py-3 hover:bg-irisBlueColor disabled:bg-[#0066ff61]"
         >
           {loading ? 'Analyzing...' : 'Analyze Symptoms'}
-        </button>
+        </button> */}
       </form>
 
       {response && (

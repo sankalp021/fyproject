@@ -40,13 +40,13 @@ const Home = () => {
                 </h1>
                 <p className="text__para">
                   We have developed a healthcare platform that supports the
-                  diagnosis, treatment, and management of seven major diseases,
+                  diagnosis, treatment, and management of three major diseases,
                   aiming to improve patient quality of life with accurate
                   information, customized treatment plans, and ongoing support.
                 </p>
-                <button onClick={bookAppointment} className="btn">
+                {/* <button onClick={bookAppointment} className="btn">
                   Request an Appointment
-                </button>
+                </button> */}
               </div>
               {/* ========== Hero Counter */}
               <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
@@ -91,7 +91,7 @@ const Home = () => {
       </section>
       {/* ========== Hero Section End ========== */}
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center">
@@ -171,7 +171,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ========== About Section ========== */}
       <About />
@@ -243,7 +243,7 @@ const Home = () => {
                 <div className="flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]">
                   <img src={avatarIcon} alt="" />
                   <h4 className="text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor">
-                    Dr. John Doe
+                    Dr. Aryaman Srivastava
                   </h4>
                 </div>
               </div>

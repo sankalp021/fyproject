@@ -50,10 +50,10 @@ const DiseasePage = () => {
           {geminiResponse && (
             <div className="mt-8 p-6 bg-[#f5f5f5] rounded-lg">
               <h3 className="text-[18px] leading-[30px] text-headingColor font-semibold mb-4">
-                AI Analysis:
+                
               </h3>
               <p className="text-[16px] leading-7 text-textColor">
-                {geminiResponse}
+                
               </p>
             </div>
           )}

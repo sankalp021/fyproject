@@ -121,19 +121,19 @@ const HeartDiseaseTest = ({ onPrediction, onAnalysis }) => {
                   : "Low Risk: Your indicators appear healthy."}
               </h3>
             </div>
-          )} */}
+          )}
 
-          {/* <DcotorsDropDown
+          <DcotorsDropDown
             testName="Heart Disease Test"
             testResult={prediction?.includes("[1]") ? "Unhealthy" : "Healthy"}
           /> */}
 
-          {/* <Modal
+          <Modal
             isOpen={isModalOpen}
             onClose={() => setIsModalOpen(false)}
             title="AI Analysis Results"
             content={geminiResponse}
-          /> */}
+          />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "What is our Ai-MedLab?",
     content:
-      "Our medical care encompasses a comprehensive healthcare platform designed to address critical aspects of patient well-being. We provide services for the diagnosis, treatment, and management of seven major diseases, aiming to enhance patients' quality of life through personalized treatment plans and ongoing support.",
+      "Our medical care encompasses a comprehensive healthcare platform designed to address critical aspects of patient well-being. We provide services for the diagnosis, treatment, and management of three major diseases, aiming to enhance patients' quality of life through personalized treatment plans and ongoing support.",
   },
   {
     question: "What happens if I need to go a hospital?",
@@ -12,7 +12,7 @@ export const faqs = [
   {
     question: "How efficient our diseases models?",
     content:
-      "Our disease models are highly efficient, leveraging advanced algorithms and data analytics to accurately diagnose, treat, and manage seven major diseases. Through continuous refinement and validation, we ensure the reliability and effectiveness of our models in providing timely and personalized care to patients.",
+      "Our disease models are highly efficient, leveraging advanced algorithms and data analytics to accurately diagnose, treat, and manage three major diseases. Through continuous refinement and validation, we ensure the reliability and effectiveness of our models in providing timely and personalized care to patients.",
   },
   {
     question: "Can I consult with doctors?",

@@ -117,7 +117,7 @@ const KidneyDiseaseTest = ({ onPrediction, onAnalysis }) => {
             </button>
           </form>
 
-          {prediction !== null && (
+          {/* {prediction !== null && (
             <div className={`mt-3 ${
               prediction.includes("[1]") ? "bg-red-400" : "bg-green-400"
             } text-2xl p-4 rounded-lg shadow-md`}
@@ -130,17 +130,17 @@ const KidneyDiseaseTest = ({ onPrediction, onAnalysis }) => {
             </div>
           )}
 
-          {/* <DcotorsDropDown
+          <DcotorsDropDown
             testName="Kidney Disease Test"
             testResult={prediction?.includes("[1]") ? "Unhealthy" : "Healthy"}
-          />
+          /> */}
 
           <Modal
             isOpen={isModalOpen}
             onClose={() => setIsModalOpen(false)}
             title="AI Analysis Results"
             content={geminiResponse}
-          /> */}
+          />
         </div>
       </div>
     </div>

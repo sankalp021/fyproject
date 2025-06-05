@@ -21,7 +21,9 @@ const mockDataMap = {
     experiences: [],
     qualifications: [],
     timeSlots: []
-  }
+  },
+  // Mock appointments data
+  "/users/appointments/my-appointments": []
 };
 
 const useFetchData = (url) => {
@@ -41,8 +43,8 @@ const useFetchData = (url) => {
       if (mockDataMap[urlPath]) {
         setData(mockDataMap[urlPath]);
       } else {
-        // Default mock data if none is specified for this URL
-        setData({ mockData: true, message: "This is mock data" });
+        // Default to empty array for unknown endpoints to prevent map errors
+        setData([]);
       }
       setLoading(false);
     }, 500);
