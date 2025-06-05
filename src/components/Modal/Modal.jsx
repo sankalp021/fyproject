@@ -2,24 +2,25 @@ import React from 'react';
 
 const Modal = ({ isOpen, onClose, title, content }) => {
   if (!isOpen) return null;
-
   // Parse content into sections using the new bracket format
   const sections = {};
   if (content) {
-    const matches = content.match(/\[(.*?)\](.*?)(?=\[|$)/gs);
-    if (matches) {
-      matches.forEach(match => {
-        const [, header, text] = match.match(/\[(.*?)\](.*)/s);
-        if (!['CONTEXT', 'INSTRUCTIONS'].includes(header)) {
-          // Clean up the text: remove any asterisks and ensure proper bullet points
-          const cleanText = text
-            .trim()
-            .replace(/\*/g, '') // Remove asterisks
-            .replace(/•/g, '•') // Standardize bullet points
-            .replace(/^\s*[-•]\s*/gm, '• '); // Convert any dash bullets to bullet points
-          sections[header] = cleanText;
-        }
-      });
+    // Split by section headers, ensuring proper separation
+    const sectionPattern = /\[([^\]]+)\]\s*([\s\S]*?)(?=\[|$)/g;
+    let match;
+    
+    while ((match = sectionPattern.exec(content)) !== null) {
+      const [, header, text] = match;
+      if (!['CONTEXT', 'INSTRUCTIONS'].includes(header.trim())) {
+        // Clean up the text: remove any asterisks and ensure proper bullet points
+        const cleanText = text
+          .trim()
+          .replace(/\*/g, '') // Remove asterisks
+          .replace(/•/g, '•') // Standardize bullet points
+          .replace(/^\s*[-•]\s*/gm, '• ') // Convert any dash bullets to bullet points
+          .replace(/\n\s*\n/g, '\n'); // Remove extra empty lines
+        sections[header.trim()] = cleanText;
+      }
     }
   }
 

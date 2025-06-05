@@ -112,7 +112,7 @@ const DiabetesTest = ({ onPrediction, onAnalysis }) => {
             </div>
           )}
 
-          <DcotorsDropDown
+          {/* <DcotorsDropDown
             testName={"Diabetes Disease Predictor"}
             testResult={prediction?.includes("[1]") ? "Unhealthy" : "Healthy"}
           />
@@ -122,7 +122,7 @@ const DiabetesTest = ({ onPrediction, onAnalysis }) => {
             onClose={() => setIsModalOpen(false)}
             title="AI Analysis Results"
             content={geminiResponse}
-          />
+          /> */}
         </div>
       </div>
     </div>

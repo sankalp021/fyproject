@@ -130,7 +130,7 @@ const KidneyDiseaseTest = ({ onPrediction, onAnalysis }) => {
             </div>
           )}
 
-          <DcotorsDropDown
+          {/* <DcotorsDropDown
             testName="Kidney Disease Test"
             testResult={prediction?.includes("[1]") ? "Unhealthy" : "Healthy"}
           />
@@ -140,7 +140,7 @@ const KidneyDiseaseTest = ({ onPrediction, onAnalysis }) => {
             onClose={() => setIsModalOpen(false)}
             title="AI Analysis Results"
             content={geminiResponse}
-          />
+          /> */}
         </div>
       </div>
     </div>

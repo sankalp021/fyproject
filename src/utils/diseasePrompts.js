@@ -67,48 +67,62 @@ Watch for these critical symptoms:
 • Warning sign 2
 • Warning sign 3
 
-Avoid using any asterisks or special characters. Keep responses direct and concise.`,
-
-    "Kidney Disease Test": (data) => `[CONTEXT]
-Patient Data:
-- Blood Pressure: ${data["blood pressure"]}
-- Specific Gravity: ${data["specific gravity"]}
-- Albumin: ${data["albumin"]}
-- Sugar: ${data["sugar"]}
-- Red Blood Cells: ${data["red blood cells"]}
-- Pus Cell: ${data["pus cell"]}
-- Pus Cell Clumps: ${data["pus cell clumps"]}
-- Bacteria: ${data["bacteria"]}
-- Blood Glucose Random: ${data["blood glucose random"]}
-- Blood Urea: ${data["blood urea"]}
-- Serum Creatinine: ${data["serum creatinine"]}
-- Sodium: ${data["sodium"]}
-- Potassium: ${data["potassium"]}
-- Hemoglobin: ${data["hemoglobin"]}
-- Packed Cell Volume: ${data["packed cell volume"]}
-- White Blood Cell Count: ${data["white blood cell count"]}
-- Red Blood Cell Count: ${data["red blood cell count"]}
-- Hypertension: ${data["hypertension"]}
-- Diabetes Mellitus: ${data["diabetes mellitus"]}
-- Coronary Artery Disease: ${data["coronary artery disease"]}
-- Appetite: ${data["appetite"]}
-- Pedal Edema: ${data["pedal edema"]}
-- Anemia: ${data["anemia"]}
+Avoid using any asterisks or special characters. Keep responses direct and concise.`,    "Kidney Disease Test": (data) => `[CONTEXT]
+Patient Renal Assessment:
+Blood Pressure: ${data["blood pressure"]}
+Specific Gravity: ${data["specific gravity"]}
+Albumin Level: ${data["albumin"]}
+Sugar Level: ${data["sugar"]}
+Red Blood Cells: ${data["red blood cells"]}
+Pus Cells: ${data["pus cell"]}
+Pus Cell Clumps: ${data["pus cell clumps"]}
+Bacteria Present: ${data["bacteria"]}
+Blood Glucose Random: ${data["blood glucose random"]}
+Blood Urea: ${data["blood urea"]}
+Serum Creatinine: ${data["serum creatinine"]}
+Sodium: ${data["sodium"]}
+Potassium: ${data["potassium"]}
+Hemoglobin: ${data["hemoglobin"]}
+Packed Cell Volume: ${data["packed cell volume"]}
+White Blood Cell Count: ${data["white blood cell count"]}
+Red Blood Cell Count: ${data["red blood cell count"]}
+Hypertension: ${data["hypertension"]}
+Diabetes Mellitus: ${data["diabetes mellitus"]}
+Coronary Artery Disease: ${data["coronary artery disease"]}
+Appetite: ${data["appetite"]}
+Pedal Edema: ${data["pedal edema"]}
+Anemia: ${data["anemia"]}
 
 [INSTRUCTIONS]
-Analyze the kidney disease indicators and provide a structured assessment.
+Provide a clear analysis of the kidney function indicators in four sections. Use bullet points where needed and avoid any special characters or symbols.
 
 [RISK ASSESSMENT]
-Evaluate the overall kidney health risk level.
+Provide a single, clear paragraph assessing the overall kidney disease risk based on the most critical indicators including creatinine levels, blood pressure, and proteinuria markers. Do not use bullet points here.
 
 [KEY FACTORS]
-Identify the most significant factors affecting kidney health.
+Present the top 4 factors affecting kidney health:
+• Serum creatinine and blood urea levels and their significance
+• Blood pressure control and its impact on kidney function
+• Proteinuria indicators and what they suggest about kidney damage
+• Electrolyte balance and its role in kidney health
 
 [LIFESTYLE RECOMMENDATIONS]
-Provide specific actionable lifestyle changes.
+List 4-5 specific actions the patient should take:
+• Dietary modifications for kidney health including sodium and protein management
+• Fluid intake recommendations based on kidney function
+• Blood pressure management strategies
+• Blood sugar control if diabetes is present
+• Regular monitoring schedule for kidney function tests
 
 [WARNING SIGNS]
-List renal symptoms requiring immediate medical attention.`,
+Watch for these critical renal symptoms:
+• Persistent swelling in legs, ankles, or face
+• Changes in urination patterns or blood in urine
+• Severe fatigue or weakness
+• Nausea, vomiting, or loss of appetite
+• Shortness of breath or chest pain
+
+Avoid using any asterisks or special characters. Keep responses direct and concise.`,
 
     "Liver Disease Test": (data) => `[CONTEXT]
 Patient Data:

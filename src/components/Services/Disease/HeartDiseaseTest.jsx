@@ -106,11 +106,11 @@ const HeartDiseaseTest = ({ onPrediction, onAnalysis }) => {
                 isLoading ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
-              {isLoading ? "Analyzing..." : "Analyze"}
+              {isLoading ? "Analyzing " : "Analyze"}
             </button>
           </form>
 
-          {prediction !== null && (
+          {/* {prediction !== null && (
             <div className={`mt-3 ${
               prediction.includes("[1]") ? "bg-red-400" : "bg-green-400"
             } text-2xl p-4 rounded-lg shadow-md`}
@@ -121,19 +121,19 @@ const HeartDiseaseTest = ({ onPrediction, onAnalysis }) => {
                   : "Low Risk: Your indicators appear healthy."}
               </h3>
             </div>
-          )}
+          )} */}
 
-          <DcotorsDropDown
+          {/* <DcotorsDropDown
             testName="Heart Disease Test"
             testResult={prediction?.includes("[1]") ? "Unhealthy" : "Healthy"}
-          />
+          /> */}
 
-          <Modal
+          {/* <Modal
             isOpen={isModalOpen}
             onClose={() => setIsModalOpen(false)}
             title="AI Analysis Results"
             content={geminiResponse}
-          />
+          /> */}
         </div>
       </div>
     </div>
